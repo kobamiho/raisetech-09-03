@@ -15,7 +15,8 @@ default: &default
   pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
   username: <%= Rails.application.credentials.db[:username] %>
   password: <%= Rails.application.credentials.db[:password] %>
-  socket: /var/lib/mysql/mysql.sock
+  host: db-raisetech-09-01.c1kbec5watha.ap-northeast-1.rds.amazonaws.com
+# socket: /var/lib/mysql/mysql.sock
 
 development:
   <<: *default
